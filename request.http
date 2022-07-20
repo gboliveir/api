@@ -1,0 +1,65 @@
+POST http://localhost:4002/customers
+content-type: application/json
+
+{
+  "status": "Em dias",
+  "name": "Cliente 1",
+  "contacts": {
+    "email": "cliente1@gmail.com",
+    "phoneNumber": "(88) 9 9999-9999"
+  }
+}
+
+###
+
+POST http://localhost:4002/customers
+content-type: application/json
+
+{
+  "status": "Em atraso",
+  "name": "Cliente 2",
+  "contacts": {
+    "email": "cliente2@gmail.com",
+    "phoneNumber": "(88) 9 9999-9999"
+  }
+}
+
+###
+
+POST http://localhost:4002/customers
+content-type: application/json
+
+{
+  "status": "Em atenção",
+  "name": "Cliente 3",
+  "contacts": {
+    "email": "cliente3@gmail.com",
+    "phoneNumber": "(88) 9 9999-9999"
+  }
+}
+
+###
+
+GET http://localhost:4002/customers
+
+###
+
+GET http://localhost:4002/customers/cf387bc6-72e7-4b9c-b62b-f660e42b993d
+
+###
+
+PUT http://localhost:4002/customers/a2adbcc5-5db6-4870-b987-1dfb8465645a
+content-type: application/json
+
+{
+  "status": "Em dias",
+  "name": "Cliente 1",
+  "contacts": {
+    "email": "cliente1@gmail.com",
+    "phoneNumber": "(88) 9 9999-9999"
+  }
+}
+
+###
+
+DELETE http://localhost:4002/customers/81798ffe-f584-4866-8646-ed20b7726736
